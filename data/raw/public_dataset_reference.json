@@ -1,0 +1,29 @@
+{
+  "recommended_public_dataset": {
+    "name": "EchoNet-Dynamic",
+    "why_it_was_chosen": [
+      "largest widely used public echocardiography video dataset",
+      "contains apical four-chamber videos with expert measurements including LVEF and LV volumes",
+      "strong fit for future multimodal retrieval and visual estimation of LV systolic function"
+    ],
+    "references": [
+      {
+        "label": "EchoNet-Dynamic official dataset",
+        "url": "https://echonet.github.io/dynamic/"
+      },
+      {
+        "label": "ASE chamber quantification guideline",
+        "url": "https://www.asecho.org/guideline/cardiac-chamber-quantification-by-echo-in-adults/"
+      }
+    ]
+  },
+  "upgrade_path": {
+    "datasets": [
+      {
+        "name": "CAMUS",
+        "note": "good next step for segmentation-oriented echo pipelines"
+      }
+    ]
+  },
+  "runtime_note": "This repository uses a local structured echocardiogram sample corpus inspired by public echo datasets and ASE-style reporting so the stack remains fully reproducible."
+}
