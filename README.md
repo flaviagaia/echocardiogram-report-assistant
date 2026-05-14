@@ -62,7 +62,7 @@ O sistema recebe:
 - `extra_notes`
 
 #### 2. Lógica clínica
-Em [clinical_logic.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/clinical_logic.py), o projeto implementa:
+Em [clinical_logic.py](src/clinical_logic.py), o projeto implementa:
 - classificação de FEVE;
 - sumários estruturados de função sistólica;
 - sumários de função diastólica;
@@ -71,13 +71,13 @@ Em [clinical_logic.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogra
 - validação explícita dos campos clínicos.
 
 #### 3. Corpus e knowledge base
-Em [data_factory.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/data_factory.py), o projeto cria:
+Em [data_factory.py](src/data_factory.py), o projeto cria:
 - casos locais de eco no estilo de laudos clínicos;
 - templates e guidelines curtos;
 - referência formal à base pública recomendada.
 
 #### 4. Retrieval
-Em [retrieval.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/retrieval.py), cada caso e documento é indexado com:
+Em [retrieval.py](src/retrieval.py), cada caso e documento é indexado com:
 - `TfidfVectorizer`
 - `cosine_similarity`
 
@@ -92,7 +92,7 @@ O espaço de busca mistura:
 - texto do laudo.
 
 #### 5. Geração da minuta
-Em [generation.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/generation.py), o sistema:
+Em [generation.py](src/generation.py), o sistema:
 - usa resumo clínico estruturado;
 - recupera casos e templates semelhantes;
 - ancora a redação no caso mais parecido;
@@ -100,7 +100,7 @@ Em [generation.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-re
 - devolve confiança, referências e evidências.
 
 #### 6. Orquestração
-Em [pipeline.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/pipeline.py), o pipeline integra:
+Em [pipeline.py](src/pipeline.py), o pipeline integra:
 - entrada estruturada;
 - classificação clínica;
 - retrieval;
@@ -117,8 +117,8 @@ Em [pipeline.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-repo
 - `unittest`
 
 ### Interface
-- API em [app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/app.py)
-- demo em [streamlit_app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/streamlit_app.py)
+- API em [app.py](app.py)
+- demo em [streamlit_app.py](streamlit_app.py)
 
 ### Execução
 ```bash
@@ -203,7 +203,7 @@ The system receives:
 - `extra_notes`
 
 #### 2. Clinical logic
-In [clinical_logic.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/clinical_logic.py), the project implements:
+In [clinical_logic.py](src/clinical_logic.py), the project implements:
 - LVEF classification;
 - structured LV systolic summaries;
 - diastolic summaries;
@@ -212,13 +212,13 @@ In [clinical_logic.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogra
 - explicit validation for clinical input fields.
 
 #### 3. Case corpus and knowledge base
-In [data_factory.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/data_factory.py), the project builds:
+In [data_factory.py](src/data_factory.py), the project builds:
 - local echo cases in clinical reporting style;
 - lightweight templates and guidelines;
 - a formal reference to the recommended public dataset.
 
 #### 4. Retrieval
-In [retrieval.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/retrieval.py), each case and knowledge document is indexed with:
+In [retrieval.py](src/retrieval.py), each case and knowledge document is indexed with:
 - `TfidfVectorizer`
 - `cosine_similarity`
 
@@ -233,7 +233,7 @@ The retrieval space mixes:
 - report text.
 
 #### 5. Draft generation
-In [generation.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/generation.py), the system:
+In [generation.py](src/generation.py), the system:
 - uses structured clinical summaries;
 - retrieves similar cases and templates;
 - anchors the wording in the nearest case;
@@ -241,7 +241,7 @@ In [generation.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-re
 - returns confidence, references, and supporting evidence.
 
 #### 6. Orchestration
-In [pipeline.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/src/pipeline.py), the pipeline integrates:
+In [pipeline.py](src/pipeline.py), the pipeline integrates:
 - structured input;
 - clinical classification;
 - retrieval;
@@ -258,8 +258,8 @@ In [pipeline.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-repo
 - `unittest`
 
 ### Interfaces
-- API in [app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/app.py)
-- demo in [streamlit_app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/echocardiogram-report-assistant/streamlit_app.py)
+- API in [app.py](app.py)
+- demo in [streamlit_app.py](streamlit_app.py)
 
 ### Run
 ```bash
